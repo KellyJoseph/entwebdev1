@@ -1,0 +1,40 @@
+<section class="ui raised segment">
+    <aside>
+    </aside>
+    <article class="six wide column">
+        <th> {{title}} </th>
+      <table class="ui celled table segment">
+          <thead>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Author</th>
+              <th>Region</th>
+              <th>View images</th>
+              <th>Delete Location</th>
+              <th>Edit</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each locations}}
+            <tr>
+              <td> {{name}} </td>
+              <td> {{description}} </td>
+              <td> {{author.firstName}} {{author.lastName}} </td>
+                <td> {{region}} </td>
+                <td>
+                    <a href="/displayphotos/{{name}}" class ="ui medium button">{{name}} Click Here</a></td>  </a></td>
+                </td>
+                <td>
+                    <a href="/deletelocation/{{id}}"> <i class="large trash alternate icon"></i></a>
+                </td>
+                <td>
+                    <a href="/updatelocationform/{{id}}"><i class="large edit icon"></i></a>
+                </td>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </article>
+  </div>
+</section>

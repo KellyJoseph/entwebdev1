@@ -1,0 +1,14 @@
+<form action="/uploadphoto/{{location}}" method="POST" enctype="multipart/form-data">
+    <div class="two fields">
+        <div class="field">
+            <label>File</label>
+            <input type="file" name="file" accept="image/png, image/jpeg">
+        </div>
+        <div class="field">
+            <label>Title</label>
+            <input placeholder="Title" type="text" name="title">
+        </div>
+    </div>
+    <button class="ui mini blue submit button"> Upload </button>
+</form>
+

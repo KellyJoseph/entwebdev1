@@ -1,0 +1,29 @@
+<section class="ui raised segment">
+    <aside>
+    </aside>
+    <article class="six wide column">
+        <th> {{title}} </th>
+        <p>List Users</p>
+        <table class="ui celled table segment">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>User ID</th>
+                <th>Delete User</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{#each users}}
+                <tr>
+                    <td> {{firstName}} {{lastName}} </td>
+                    <td> {{email}} </td>
+                    <td> {{id}} </td>
+                    <td> <a href="/deleteuser/{{id}}"> <i class="large trash alternate icon"></i></td>
+                </tr>
+            {{/each}}
+            </tbody>
+        </table>
+    </article>
+    </div>
+</section>

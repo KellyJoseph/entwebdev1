@@ -1,0 +1,16 @@
+<section class="ui raised segment">
+    <div class="ui grid">
+        <article class="eight wide column">
+            <div class ="ui segment">
+            <h2>Now viewing photos for {{location}} </h2>
+            </div>
+
+                {{# each images}}
+                    {{> card}}
+
+                    {{/each}}
+            {{> uploadphoto }}
+            </div>
+        </article>
+    </div>
+</section>

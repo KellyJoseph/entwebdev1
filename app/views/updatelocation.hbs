@@ -1,0 +1,56 @@
+{{> mainmenu _id="updatelocation" }}
+
+<section class="ui raised segment">
+    <div class="ui grid ">
+        <div class="ui form sixteen wide column">
+            <div class="ui stacked segment">
+                <form action="/updatelocation/{{id}}" method="POST">
+                    <h3 class="ui header">Add POI</h3>
+                    <div class="two fields">
+
+                        <div class="field">
+                            <label>Name</label>
+                            <input value="{{location.name}}" type="text" name="name">
+                        </div>
+
+                        <div class="field">
+                            <label>Region</label>
+                            <div class="search selection ui dropdown">
+                                <input type="hidden" name="region">
+                                <i class="search selectiom dropdown icon"></i>
+                                <div class="default text"> Coastal Region</div>
+                                <div class="menu">
+                                    <div class="item" data-value= "North" >North</div>
+                                    <div class="item" data-value= "North East" >North East</div>
+                                    <div class="item" data-value= "East" >East</div>
+                                    <div class="item" data-value= "South East" >South East</div>
+                                    <div class="item" data-value= "South" >South</div>
+                                    <div class="item" data-value= "South West" >South West</div>
+                                    <div class="item" data-value= "West" >West</div>
+                                    <div class="item" data-value= "North West" >North West</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label>Description</label>
+                            <input value="{{location.description}}" type="text" name="description">
+                        </div>
+                        <div class="two fields">
+                            <div class="field">
+                                <label>Latitude</label>
+                                <input value="{{location.latitude}}" type="text" name="latitude">
+                            </div>
+                            <div class="field">
+                                <label>Longitude</label>
+                                <input value="{{location.latitude}}" type="text" name="longitude">
+
+                            </div>
+                        </div>
+                    </div>
+                    <button class="ui blue submit button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

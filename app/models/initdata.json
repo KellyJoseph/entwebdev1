@@ -1,0 +1,81 @@
+{
+  "users": {
+    "_model": "User",
+    "homer": {
+      "firstName": "Homer",
+      "lastName": "Simpson",
+      "email": "homer@simpson.com",
+      "password": "secret",
+      "admin": false
+    },
+    "marge": {
+      "firstName": "Marge",
+      "lastName": "Simpson",
+      "email": "marge@simpson.com",
+      "password": "secret",
+      "admin": false
+    },
+    "bart": {
+      "firstName": "Bart",
+      "lastName": "Simpson",
+      "email": "bart@simpson.com",
+      "password": "secret",
+      "admin": false
+    },
+    "joseph": {
+      "firstName": "Joseph",
+      "lastName": "Kelly",
+      "email": "joemickkelly@yahoo.com",
+      "password": "secret",
+      "admin": true
+    }
+  },
+  "locations": {
+    "_model": "Location",
+    "Bull Island": {
+      "name": "Bull Island",
+      "description": "Not very pretty",
+      "author": "->users.bart",
+      "region": "East",
+      "latitude": "9875",
+      "longitude": "1234"
+    },
+    "Saltee Islands": {
+      "name": "Saltee Islands",
+      "description": "Good birdwatching location",
+      "author": "->users.homer",
+      "region": "South East",
+      "latitude": "9875",
+      "longitude": "1234"
+    },
+    "Kyusshu": {
+      "name": "Kyusshu",
+      "description": "A tropical volcanic island with an active volcano",
+      "author": "->users.joseph",
+      "region": "East",
+      "latitude": "Far East",
+      "longitude": "Far South"
+    }
+  },
+  "photos": {
+    "_model": "Photo",
+    "Bull Island": {
+      "title": "Bull",
+      "url": "http://res.cloudinary.com/dxdletsbp/image/upload/v1551853670/tctdudzuhwwtkfexzvlv.webp",
+      "public_id": "tctdudzuhwwtkfexzvlv",
+      "location": "Bull Island"
+    },
+    "Kyu": {
+      "title": "kyu1",
+      "url": "http://res.cloudinary.com/dxdletsbp/image/upload/v1551853861/czkbeeasyejwdpkbsp68.jpg",
+      "public_id": "hfejs2bk6qryok0vo9ne",
+      "location": "Kyusshu"
+    },
+    "Kyu2": {
+      "title": "kyu2",
+      "url": "http://res.cloudinary.com/dxdletsbp/image/upload/v1551853884/hfejs2bk6qryok0vo9ne.webp",
+      "public_id": "nmh3hhrwriscjodjjx2t",
+      "location": "Kyusshu"
+    }
+  }
+}
