@@ -1,4 +1,5 @@
 # entwebdev1
+You can visit this app on Heroku at https://aqueous-falls-66270.herokuapp.com/
 A Hapi framework Node app using a Mongo DB. Make accounts, share locations, post photos, write descriptions
 This is a simple web app that allows users to register an account, post a point of interest (Location). 
 Users can then select that location, or any other Location that they or other users have posted, and view or
