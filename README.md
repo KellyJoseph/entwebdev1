@@ -14,7 +14,7 @@ There are models specifying for object(document) schema for User, Location and P
 When an image is created, it is saved to a temporary folder, then uploaded from there to Cloudinary, and the url for that 
 image is returned. From within the same handler that uploads the photo to Cloudinay, a new Photo object is created from the Photo model/schema using the form data payload and the previously obtained Cloudinary url is set as a field in that object (document), and saved to MongoDB with and MongoDB generated ID number. These Photo objects also have the loaction name passed from the view with the upload form (request.params.id). This field is useful when obtaining the relevant photos to display when selecting a location to display. The find photos handler only finds the photos that have the same id as the location being displayed.
 
-<h2>Room for improvement</2>
+<h2>Room for improvement</h2>
 Not much focus on the presentation or visual design was put into this assignment, most of the effort was put into the
 management of the accounts, locations and images rather than the presentation, something that I would like to improve.
 There is some error and exception handling, however it has not been implemented consistently for this assignment so it
