@@ -7,10 +7,14 @@ This is a simple web app that allows users to register an account, post a point 
 Users can then select that location, or any other Location that they or other users have posted, and view or
 upload photos of that location. These locations can also be deleted. 
 To log in as a normal user seeded into the database, try: 
+<br>
 email: homer@simpson.com and password: secret 
+<br>
 email: bart@simpson.com and password: secret 
+<br>
 To log in as an admin, enter: 
 email: joemickkelly@yahoo.com and password: secret. 
+<br>
 To create an admin account, enter: supersecretadminpassword as the password when registering an account. Any other password will create a normal user account. 
 
 <h2>How this app works</h2>
