@@ -6,6 +6,7 @@ An MVC Hapi framework Node.js web app using a Mongo DB. Make accounts, share loc
 This is a simple web app that allows users to register an account, post a point of interest (Location). 
 Users can then select that location, or any other Location that they or other users have posted, and view or
 upload photos of that location. These locations can also be deleted. 
+<br>
 To log in as a normal user seeded into the database, try: 
 <br>
 email: homer@simpson.com and password: secret 
@@ -13,6 +14,7 @@ email: homer@simpson.com and password: secret
 email: bart@simpson.com and password: secret 
 <br>
 To log in as an admin, enter: 
+<br>
 email: joemickkelly@yahoo.com and password: secret. 
 <br>
 To create an admin account, enter: supersecretadminpassword as the password when registering an account. Any other password will create a normal user account. 
